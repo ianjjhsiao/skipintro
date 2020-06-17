@@ -1,0 +1,32 @@
+{
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "content_script.js"
+      ],
+      "matches": [
+        "https://static.crunchyroll.com/vilos-v2/web/vilos/player.html*"
+      ]
+    }
+  ],
+  "description": "Allows intros to be skipped through a skip button on Crunchyroll",
+  "icons": {
+    "16": "icon.png",
+    "128": "Big_icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background_script.js"
+    ],
+    "persistent": false
+  },
+  "manifest_version": 2,
+  "name": "Crunchyroll Intro Skipper",
+  "permissions": [
+    "https://www.crunchyroll.com/*"
+  ],
+  "version": "1.0"
+}
+
+
